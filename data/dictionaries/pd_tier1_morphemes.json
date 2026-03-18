@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "source": "Krishnamurti 2003, filtered to Tier-1 (comparative method, attested in 3+ branches)",
+    "generated": "2026-03-15",
+    "note": "si removed — not a PD accusative form. See research_pd_morphological_inventory.md"
+  },
+  "tier1": [
+    {"cv": "ku", "function": "dative", "pd_form": "*-kku", "tier": 1, "branches": 4},
+    {"cv": "a-i", "function": "accusative", "pd_form": "*-ay", "tier": 1, "branches": 4},
+    {"cv": "a", "function": "oblique_stem", "pd_form": "*-a", "tier": 1, "branches": 5},
+    {"cv": "i", "function": "oblique_stem", "pd_form": "*-i", "tier": 1, "branches": 4},
+    {"cv": "tu", "function": "past_tense", "pd_form": "*-t(u)", "tier": 1, "branches": 4},
+    {"cv": "ti", "function": "past_tense_variant", "pd_form": "*-tt(i)", "tier": 1, "branches": 3},
+    {"cv": "nu-tu", "function": "past_tense_nasal", "pd_form": "*-nt(u)", "tier": 1, "branches": 3},
+    {"cv": "a-n", "function": "1sg_person", "pd_form": "*-Vn", "tier": 1, "branches": 4},
+    {"cv": "a-r", "function": "3pl_human", "pd_form": "*-Vr", "tier": 1, "branches": 5},
+    {"cv": "a-tu", "function": "3sg_neuter", "pd_form": "*-atu", "tier": 1, "branches": 4},
+    {"cv": "i-n", "function": "genitive", "pd_form": "*-in", "tier": 1, "branches": 3},
+    {"cv": "ka-r", "function": "plural_inanimate", "pd_form": "*-kaL", "tier": 1, "branches": 3},
+    {"cv": "a-m", "function": "neuter_nom", "pd_form": "*-am", "tier": 1, "branches": 3},
+    {"cv": "a-r", "function": "plural_animate", "pd_form": "*-ar", "tier": 1, "branches": 5}
+  ]
+}

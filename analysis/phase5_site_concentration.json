@@ -1,0 +1,1480 @@
+{
+  "metadata": {
+    "generated": "2026-03-17 18:04 CT",
+    "n_inscriptions": 1721,
+    "n_permutations": 10000,
+    "z_threshold": 2.0,
+    "fdr_q": 0.05
+  },
+  "site_summary": {
+    "": {
+      "inscriptions": 3,
+      "tokens": 6,
+      "tier": "EXCLUDED"
+    },
+    "Apodoulou": {
+      "inscriptions": 3,
+      "tokens": 30,
+      "tier": "EXCLUDED"
+    },
+    "Arkhalkhori": {
+      "inscriptions": 15,
+      "tokens": 138,
+      "tier": "EXCLUDED"
+    },
+    "Armenoi": {
+      "inscriptions": 1,
+      "tokens": 1,
+      "tier": "EXCLUDED"
+    },
+    "Crete": {
+      "inscriptions": 4,
+      "tokens": 28,
+      "tier": "EXCLUDED"
+    },
+    "Fourni": {
+      "inscriptions": 1,
+      "tokens": 3,
+      "tier": "EXCLUDED"
+    },
+    "Gournia": {
+      "inscriptions": 5,
+      "tokens": 22,
+      "tier": "EXCLUDED"
+    },
+    "Haghia Triada": {
+      "inscriptions": 1106,
+      "tokens": 3639,
+      "tier": "PRIMARY"
+    },
+    "Haghios Stehanos": {
+      "inscriptions": 1,
+      "tokens": 2,
+      "tier": "EXCLUDED"
+    },
+    "Iouktas": {
+      "inscriptions": 16,
+      "tokens": 148,
+      "tier": "EXCLUDED"
+    },
+    "Kalo Chorafi": {
+      "inscriptions": 1,
+      "tokens": 1,
+      "tier": "EXCLUDED"
+    },
+    "Kamilari": {
+      "inscriptions": 1,
+      "tokens": 2,
+      "tier": "EXCLUDED"
+    },
+    "Kannia": {
+      "inscriptions": 1,
+      "tokens": 2,
+      "tier": "EXCLUDED"
+    },
+    "Kardamoutsa": {
+      "inscriptions": 1,
+      "tokens": 2,
+      "tier": "EXCLUDED"
+    },
+    "Kea": {
+      "inscriptions": 7,
+      "tokens": 12,
+      "tier": "EXCLUDED"
+    },
+    "Khania": {
+      "inscriptions": 226,
+      "tokens": 744,
+      "tier": "PRIMARY"
+    },
+    "Knossos": {
+      "inscriptions": 56,
+      "tokens": 269,
+      "tier": "PRIMARY"
+    },
+    "Kophinas": {
+      "inscriptions": 2,
+      "tokens": 43,
+      "tier": "EXCLUDED"
+    },
+    "Kythera": {
+      "inscriptions": 2,
+      "tokens": 5,
+      "tier": "EXCLUDED"
+    },
+    "Larani": {
+      "inscriptions": 2,
+      "tokens": 10,
+      "tier": "EXCLUDED"
+    },
+    "Malia": {
+      "inscriptions": 22,
+      "tokens": 76,
+      "tier": "SECONDARY"
+    },
+    "Margiana": {
+      "inscriptions": 1,
+      "tokens": 1,
+      "tier": "EXCLUDED"
+    },
+    "Miletos": {
+      "inscriptions": 4,
+      "tokens": 9,
+      "tier": "EXCLUDED"
+    },
+    "Milos": {
+      "inscriptions": 3,
+      "tokens": 9,
+      "tier": "EXCLUDED"
+    },
+    "Mokhilos": {
+      "inscriptions": 1,
+      "tokens": 3,
+      "tier": "EXCLUDED"
+    },
+    "Mycenae": {
+      "inscriptions": 3,
+      "tokens": 2,
+      "tier": "EXCLUDED"
+    },
+    "Nerokurou": {
+      "inscriptions": 1,
+      "tokens": 2,
+      "tier": "EXCLUDED"
+    },
+    "Palaikastro": {
+      "inscriptions": 25,
+      "tokens": 229,
+      "tier": "SECONDARY"
+    },
+    "Papourou": {
+      "inscriptions": 1,
+      "tokens": 5,
+      "tier": "EXCLUDED"
+    },
+    "Petras": {
+      "inscriptions": 11,
+      "tokens": 79,
+      "tier": "EXCLUDED"
+    },
+    "Phaistos": {
+      "inscriptions": 66,
+      "tokens": 273,
+      "tier": "PRIMARY"
+    },
+    "Platanos": {
+      "inscriptions": 1,
+      "tokens": 22,
+      "tier": "EXCLUDED"
+    },
+    "Poros Herakleiou": {
+      "inscriptions": 2,
+      "tokens": 11,
+      "tier": "EXCLUDED"
+    },
+    "Prassa": {
+      "inscriptions": 1,
+      "tokens": 14,
+      "tier": "EXCLUDED"
+    },
+    "Psykhro": {
+      "inscriptions": 3,
+      "tokens": 18,
+      "tier": "EXCLUDED"
+    },
+    "Pyrgos": {
+      "inscriptions": 4,
+      "tokens": 14,
+      "tier": "EXCLUDED"
+    },
+    "Samothrace": {
+      "inscriptions": 2,
+      "tokens": 7,
+      "tier": "EXCLUDED"
+    },
+    "Selakanos": {
+      "inscriptions": 1,
+      "tokens": 2,
+      "tier": "EXCLUDED"
+    },
+    "Sitia": {
+      "inscriptions": 1,
+      "tokens": 3,
+      "tier": "EXCLUDED"
+    },
+    "Skhinia": {
+      "inscriptions": 1,
+      "tokens": 4,
+      "tier": "EXCLUDED"
+    },
+    "Skoteino Cave": {
+      "inscriptions": 1,
+      "tokens": 7,
+      "tier": "EXCLUDED"
+    },
+    "Syme": {
+      "inscriptions": 12,
+      "tokens": 89,
+      "tier": "EXCLUDED"
+    },
+    "Tel Haror": {
+      "inscriptions": 1,
+      "tokens": 4,
+      "tier": "EXCLUDED"
+    },
+    "Thera": {
+      "inscriptions": 18,
+      "tokens": 48,
+      "tier": "EXCLUDED"
+    },
+    "Tiryns": {
+      "inscriptions": 1,
+      "tokens": 2,
+      "tier": "EXCLUDED"
+    },
+    "Traostalos": {
+      "inscriptions": 1,
+      "tokens": 2,
+      "tier": "EXCLUDED"
+    },
+    "Troullos": {
+      "inscriptions": 1,
+      "tokens": 24,
+      "tier": "EXCLUDED"
+    },
+    "Troy": {
+      "inscriptions": 2,
+      "tokens": 10,
+      "tier": "EXCLUDED"
+    },
+    "Trypiti": {
+      "inscriptions": 1,
+      "tokens": 4,
+      "tier": "EXCLUDED"
+    },
+    "Tylissos": {
+      "inscriptions": 6,
+      "tokens": 94,
+      "tier": "EXCLUDED"
+    },
+    "Vrysinas": {
+      "inscriptions": 3,
+      "tokens": 11,
+      "tier": "EXCLUDED"
+    },
+    "Zakros": {
+      "inscriptions": 52,
+      "tokens": 520,
+      "tier": "SECONDARY"
+    },
+    "Zominthos": {
+      "inscriptions": 1,
+      "tokens": 1,
+      "tier": "EXCLUDED"
+    }
+  },
+  "enriched_pairs": [
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10601",
+      "sign_cp": 67073,
+      "y_ij": 164,
+      "n_i": 3639,
+      "y_j": 187,
+      "delta": 0.469595,
+      "sigma": 0.054305,
+      "zeta": 8.6473,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10605",
+      "sign_cp": 67077,
+      "y_ij": 61,
+      "n_i": 3639,
+      "y_j": 158,
+      "delta": -0.214113,
+      "sigma": 0.068301,
+      "zeta": -3.1349,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10607",
+      "sign_cp": 67079,
+      "y_ij": 50,
+      "n_i": 3639,
+      "y_j": 202,
+      "delta": -0.408981,
+      "sigma": 0.063776,
+      "zeta": -6.4128,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10608",
+      "sign_cp": 67080,
+      "y_ij": 25,
+      "n_i": 3639,
+      "y_j": 67,
+      "delta": -0.228722,
+      "sigma": 0.104724,
+      "zeta": -2.184,
+      "perm_p": 0.0033996600339966003
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1060D",
+      "sign_cp": 67085,
+      "y_ij": 10,
+      "n_i": 3639,
+      "y_j": 40,
+      "delta": -0.395695,
+      "sigma": 0.141764,
+      "zeta": -2.7912,
+      "perm_p": 0.00019998000199980003
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1061A",
+      "sign_cp": 67098,
+      "y_ij": 84,
+      "n_i": 3639,
+      "y_j": 191,
+      "delta": -0.141226,
+      "sigma": 0.06112,
+      "zeta": -2.3106,
+      "perm_p": 0.00039996000399960006
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10621",
+      "sign_cp": 67105,
+      "y_ij": 7,
+      "n_i": 3639,
+      "y_j": 31,
+      "delta": -0.42859,
+      "sigma": 0.16252,
+      "zeta": -2.6372,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10622",
+      "sign_cp": 67106,
+      "y_ij": 11,
+      "n_i": 3639,
+      "y_j": 57,
+      "delta": -0.476101,
+      "sigma": 0.121668,
+      "zeta": -3.9131,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1062E",
+      "sign_cp": 67118,
+      "y_ij": 12,
+      "n_i": 3639,
+      "y_j": 48,
+      "delta": -0.396168,
+      "sigma": 0.129475,
+      "zeta": -3.0598,
+      "perm_p": 0.00019998000199980003
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10631",
+      "sign_cp": 67121,
+      "y_ij": 43,
+      "n_i": 3639,
+      "y_j": 169,
+      "delta": -0.397213,
+      "sigma": 0.069395,
+      "zeta": -5.7239,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10635",
+      "sign_cp": 67125,
+      "y_ij": 8,
+      "n_i": 3639,
+      "y_j": 29,
+      "delta": -0.359531,
+      "sigma": 0.164694,
+      "zeta": -2.183,
+      "perm_p": 0.0081991800819918
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1063B",
+      "sign_cp": 67131,
+      "y_ij": 39,
+      "n_i": 3639,
+      "y_j": 96,
+      "delta": -0.184687,
+      "sigma": 0.086633,
+      "zeta": -2.1318,
+      "perm_p": 0.0016998300169983002
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1063C",
+      "sign_cp": 67132,
+      "y_ij": 41,
+      "n_i": 3639,
+      "y_j": 47,
+      "delta": 0.45327,
+      "sigma": 0.107057,
+      "zeta": 4.2339,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1063D",
+      "sign_cp": 67133,
+      "y_ij": 45,
+      "n_i": 3639,
+      "y_j": 52,
+      "delta": 0.443659,
+      "sigma": 0.102014,
+      "zeta": 4.349,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1063E",
+      "sign_cp": 67134,
+      "y_ij": 230,
+      "n_i": 3639,
+      "y_j": 284,
+      "delta": 0.378063,
+      "sigma": 0.045246,
+      "zeta": 8.3556,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10642",
+      "sign_cp": 67138,
+      "y_ij": 262,
+      "n_i": 3639,
+      "y_j": 307,
+      "delta": 0.44326,
+      "sigma": 0.043125,
+      "zeta": 10.2785,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10649",
+      "sign_cp": 67145,
+      "y_ij": 46,
+      "n_i": 3639,
+      "y_j": 64,
+      "delta": 0.239146,
+      "sigma": 0.095857,
+      "zeta": 2.4948,
+      "perm_p": 0.0006999300069993001
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10650",
+      "sign_cp": 67152,
+      "y_ij": 1,
+      "n_i": 3639,
+      "y_j": 15,
+      "delta": -0.653011,
+      "sigma": 0.250194,
+      "zeta": -2.61,
+      "perm_p": 0.0014998500149985001
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10652",
+      "sign_cp": 67154,
+      "y_ij": 0,
+      "n_i": 3639,
+      "y_j": 11,
+      "delta": -0.751217,
+      "sigma": 0.301672,
+      "zeta": -2.4902,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10653",
+      "sign_cp": 67155,
+      "y_ij": 16,
+      "n_i": 3639,
+      "y_j": 17,
+      "delta": 0.550608,
+      "sigma": 0.174356,
+      "zeta": 3.158,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10655",
+      "sign_cp": 67157,
+      "y_ij": 239,
+      "n_i": 3639,
+      "y_j": 274,
+      "delta": 0.468787,
+      "sigma": 0.045288,
+      "zeta": 10.3512,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10657",
+      "sign_cp": 67159,
+      "y_ij": 16,
+      "n_i": 3639,
+      "y_j": 57,
+      "delta": -0.354385,
+      "sigma": 0.117456,
+      "zeta": -3.0172,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10659",
+      "sign_cp": 67161,
+      "y_ij": 16,
+      "n_i": 3639,
+      "y_j": 20,
+      "delta": 0.349613,
+      "sigma": 0.166957,
+      "zeta": 2.094,
+      "perm_p": 0.0086991300869913
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1066B",
+      "sign_cp": 67179,
+      "y_ij": 6,
+      "n_i": 3639,
+      "y_j": 6,
+      "delta": 0.636814,
+      "sigma": 0.288843,
+      "zeta": 2.2047,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1066F",
+      "sign_cp": 67183,
+      "y_ij": 5,
+      "n_i": 3639,
+      "y_j": 5,
+      "delta": 0.636723,
+      "sigma": 0.316381,
+      "zeta": 2.0125,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+106AB",
+      "sign_cp": 67243,
+      "y_ij": 0,
+      "n_i": 3639,
+      "y_j": 15,
+      "delta": -0.75165,
+      "sigma": 0.258386,
+      "zeta": -2.909,
+      "perm_p": 0.00039996000399960006
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+106B9",
+      "sign_cp": 67257,
+      "y_ij": 6,
+      "n_i": 3639,
+      "y_j": 6,
+      "delta": 0.636814,
+      "sigma": 0.288843,
+      "zeta": 2.2047,
+      "perm_p": 0.00039996000399960006
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+106E6",
+      "sign_cp": 67302,
+      "y_ij": 0,
+      "n_i": 3639,
+      "y_j": 8,
+      "delta": -0.750892,
+      "sigma": 0.35369,
+      "zeta": -2.123,
+      "perm_p": 0.0058994100589941
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+106F1",
+      "sign_cp": 67313,
+      "y_ij": 5,
+      "n_i": 3639,
+      "y_j": 5,
+      "delta": 0.636723,
+      "sigma": 0.316381,
+      "zeta": 2.0125,
+      "perm_p": 0.0004999500049995
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+106F2",
+      "sign_cp": 67314,
+      "y_ij": 7,
+      "n_i": 3639,
+      "y_j": 7,
+      "delta": 0.636905,
+      "sigma": 0.267442,
+      "zeta": 2.3815,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10708",
+      "sign_cp": 67336,
+      "y_ij": 0,
+      "n_i": 3639,
+      "y_j": 10,
+      "delta": -0.751108,
+      "sigma": 0.316381,
+      "zeta": -2.3741,
+      "perm_p": 0.0020997900209979003
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10709",
+      "sign_cp": 67337,
+      "y_ij": 12,
+      "n_i": 3639,
+      "y_j": 12,
+      "delta": 0.637361,
+      "sigma": 0.204361,
+      "zeta": 3.1188,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1070B",
+      "sign_cp": 67339,
+      "y_ij": 19,
+      "n_i": 3639,
+      "y_j": 22,
+      "delta": 0.439226,
+      "sigma": 0.156484,
+      "zeta": 2.8068,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10713",
+      "sign_cp": 67347,
+      "y_ij": 16,
+      "n_i": 3639,
+      "y_j": 20,
+      "delta": 0.349613,
+      "sigma": 0.166957,
+      "zeta": 2.094,
+      "perm_p": 0.0027997200279972004
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10719",
+      "sign_cp": 67353,
+      "y_ij": 6,
+      "n_i": 3639,
+      "y_j": 23,
+      "delta": -0.379758,
+      "sigma": 0.185956,
+      "zeta": -2.0422,
+      "perm_p": 0.0018998100189981002
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+1071A",
+      "sign_cp": 67354,
+      "y_ij": 2,
+      "n_i": 3639,
+      "y_j": 14,
+      "delta": -0.543504,
+      "sigma": 0.250194,
+      "zeta": -2.1723,
+      "perm_p": 0.0007999200079992001
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10729",
+      "sign_cp": 67369,
+      "y_ij": 0,
+      "n_i": 3639,
+      "y_j": 9,
+      "delta": -0.751,
+      "sigma": 0.333478,
+      "zeta": -2.252,
+      "perm_p": 0.00029997000299970003
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10741",
+      "sign_cp": 67393,
+      "y_ij": 12,
+      "n_i": 3639,
+      "y_j": 41,
+      "delta": -0.337135,
+      "sigma": 0.137714,
+      "zeta": -2.4481,
+      "perm_p": 0.00039996000399960006
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10745",
+      "sign_cp": 67397,
+      "y_ij": 15,
+      "n_i": 3639,
+      "y_j": 16,
+      "delta": 0.545154,
+      "sigma": 0.179875,
+      "zeta": 3.0307,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10748",
+      "sign_cp": 67400,
+      "y_ij": 0,
+      "n_i": 3639,
+      "y_j": 10,
+      "delta": -0.751108,
+      "sigma": 0.316381,
+      "zeta": -2.3741,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10749",
+      "sign_cp": 67401,
+      "y_ij": 8,
+      "n_i": 3639,
+      "y_j": 30,
+      "delta": -0.372192,
+      "sigma": 0.16252,
+      "zeta": -2.2901,
+      "perm_p": 0.001999800019998
+    },
+    {
+      "site": "Haghia Triada",
+      "sign": "U+10755",
+      "sign_cp": 67413,
+      "y_ij": 25,
+      "n_i": 3639,
+      "y_j": 32,
+      "delta": 0.324136,
+      "sigma": 0.13282,
+      "zeta": 2.4404,
+      "perm_p": 0.00039996000399960006
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10635",
+      "sign_cp": 67125,
+      "y_ij": 11,
+      "n_i": 744,
+      "y_j": 29,
+      "delta": 0.371264,
+      "sigma": 0.15854,
+      "zeta": 2.3418,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1063E",
+      "sign_cp": 67134,
+      "y_ij": 6,
+      "n_i": 744,
+      "y_j": 284,
+      "delta": -0.13643,
+      "sigma": 0.059899,
+      "zeta": -2.2776,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10642",
+      "sign_cp": 67138,
+      "y_ij": 8,
+      "n_i": 744,
+      "y_j": 307,
+      "delta": -0.12926,
+      "sigma": 0.057574,
+      "zeta": -2.2451,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1064F",
+      "sign_cp": 67151,
+      "y_ij": 4,
+      "n_i": 744,
+      "y_j": 6,
+      "delta": 0.75472,
+      "sigma": 0.31644,
+      "zeta": 2.385,
+      "perm_p": 0.0013998600139986002
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10650",
+      "sign_cp": 67152,
+      "y_ij": 13,
+      "n_i": 744,
+      "y_j": 15,
+      "delta": 1.032279,
+      "sigma": 0.189338,
+      "zeta": 5.452,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10655",
+      "sign_cp": 67157,
+      "y_ij": 7,
+      "n_i": 744,
+      "y_j": 274,
+      "delta": -0.129396,
+      "sigma": 0.060813,
+      "zeta": -2.1278,
+      "perm_p": 0.019598040195980403
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10657",
+      "sign_cp": 67159,
+      "y_ij": 40,
+      "n_i": 744,
+      "y_j": 57,
+      "delta": 0.808758,
+      "sigma": 0.102202,
+      "zeta": 7.9133,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1065A",
+      "sign_cp": 67162,
+      "y_ij": 11,
+      "n_i": 744,
+      "y_j": 22,
+      "delta": 0.532696,
+      "sigma": 0.174464,
+      "zeta": 3.0533,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1066E",
+      "sign_cp": 67182,
+      "y_ij": 3,
+      "n_i": 744,
+      "y_j": 4,
+      "delta": 0.867883,
+      "sigma": 0.378142,
+      "zeta": 2.2951,
+      "perm_p": 0.00039996000399960006
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1067A",
+      "sign_cp": 67194,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1067B",
+      "sign_cp": 67195,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1067C",
+      "sign_cp": 67196,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1067E",
+      "sign_cp": 67198,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1068C",
+      "sign_cp": 67212,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+106A8",
+      "sign_cp": 67240,
+      "y_ij": 4,
+      "n_i": 744,
+      "y_j": 4,
+      "delta": 1.224771,
+      "sigma": 0.353743,
+      "zeta": 3.4623,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+106A9",
+      "sign_cp": 67241,
+      "y_ij": 4,
+      "n_i": 744,
+      "y_j": 5,
+      "delta": 0.937065,
+      "sigma": 0.333535,
+      "zeta": 2.8095,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+106AB",
+      "sign_cp": 67243,
+      "y_ij": 15,
+      "n_i": 744,
+      "y_j": 15,
+      "delta": 1.226862,
+      "sigma": 0.182943,
+      "zeta": 6.7063,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+106B1",
+      "sign_cp": 67249,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+106B3",
+      "sign_cp": 67251,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+106DD",
+      "sign_cp": 67293,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+106E6",
+      "sign_cp": 67302,
+      "y_ij": 8,
+      "n_i": 744,
+      "y_j": 8,
+      "delta": 1.225531,
+      "sigma": 0.250269,
+      "zeta": 4.8969,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+106E7",
+      "sign_cp": 67303,
+      "y_ij": 5,
+      "n_i": 744,
+      "y_j": 10,
+      "delta": 0.531696,
+      "sigma": 0.258459,
+      "zeta": 2.0572,
+      "perm_p": 0.0006999300069993001
+    },
+    {
+      "site": "Khania",
+      "sign": "U+106E8",
+      "sign_cp": 67304,
+      "y_ij": 3,
+      "n_i": 744,
+      "y_j": 3,
+      "delta": 1.224581,
+      "sigma": 0.408413,
+      "zeta": 2.9984,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+106EA",
+      "sign_cp": 67306,
+      "y_ij": 3,
+      "n_i": 744,
+      "y_j": 4,
+      "delta": 0.867883,
+      "sigma": 0.378142,
+      "zeta": 2.2951,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10708",
+      "sign_cp": 67336,
+      "y_ij": 9,
+      "n_i": 744,
+      "y_j": 10,
+      "delta": 1.079094,
+      "sigma": 0.229709,
+      "zeta": 4.6977,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10710",
+      "sign_cp": 67344,
+      "y_ij": 5,
+      "n_i": 744,
+      "y_j": 8,
+      "delta": 0.698797,
+      "sigma": 0.277592,
+      "zeta": 2.5173,
+      "perm_p": 0.0004999500049995
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10719",
+      "sign_cp": 67353,
+      "y_ij": 17,
+      "n_i": 744,
+      "y_j": 23,
+      "delta": 0.85554,
+      "sigma": 0.15854,
+      "zeta": 5.3964,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1071A",
+      "sign_cp": 67354,
+      "y_ij": 12,
+      "n_i": 744,
+      "y_j": 14,
+      "delta": 1.018605,
+      "sigma": 0.196459,
+      "zeta": 5.1848,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10721",
+      "sign_cp": 67361,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10725",
+      "sign_cp": 67365,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10728",
+      "sign_cp": 67368,
+      "y_ij": 3,
+      "n_i": 744,
+      "y_j": 3,
+      "delta": 1.224581,
+      "sigma": 0.408413,
+      "zeta": 2.9984,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10729",
+      "sign_cp": 67369,
+      "y_ij": 7,
+      "n_i": 744,
+      "y_j": 9,
+      "delta": 0.90684,
+      "sigma": 0.250269,
+      "zeta": 3.6235,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10741",
+      "sign_cp": 67393,
+      "y_ij": 18,
+      "n_i": 744,
+      "y_j": 41,
+      "delta": 0.452406,
+      "sigma": 0.130708,
+      "zeta": 3.4612,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10746",
+      "sign_cp": 67398,
+      "y_ij": 35,
+      "n_i": 744,
+      "y_j": 137,
+      "delta": 0.206207,
+      "sigma": 0.077145,
+      "zeta": 2.673,
+      "perm_p": 0.00019998000199980003
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10747",
+      "sign_cp": 67399,
+      "y_ij": 14,
+      "n_i": 744,
+      "y_j": 35,
+      "delta": 0.399502,
+      "sigma": 0.143329,
+      "zeta": 2.7873,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10749",
+      "sign_cp": 67401,
+      "y_ij": 18,
+      "n_i": 744,
+      "y_j": 30,
+      "delta": 0.667539,
+      "sigma": 0.144805,
+      "zeta": 4.6099,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1074C",
+      "sign_cp": 67404,
+      "y_ij": 2,
+      "n_i": 744,
+      "y_j": 2,
+      "delta": 1.224391,
+      "sigma": 0.500134,
+      "zeta": 2.4481,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+1074D",
+      "sign_cp": 67405,
+      "y_ij": 6,
+      "n_i": 744,
+      "y_j": 6,
+      "delta": 1.225151,
+      "sigma": 0.288908,
+      "zeta": 4.2406,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Khania",
+      "sign": "U+10765",
+      "sign_cp": 67429,
+      "y_ij": 4,
+      "n_i": 744,
+      "y_j": 4,
+      "delta": 1.224771,
+      "sigma": 0.353743,
+      "zeta": 3.4623,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Knossos",
+      "sign": "U+1072A",
+      "sign_cp": 67370,
+      "y_ij": 4,
+      "n_i": 269,
+      "y_j": 7,
+      "delta": 0.729684,
+      "sigma": 0.301749,
+      "zeta": 2.4182,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Knossos",
+      "sign": "U+1074A",
+      "sign_cp": 67402,
+      "y_ij": 2,
+      "n_i": 269,
+      "y_j": 2,
+      "delta": 1.327126,
+      "sigma": 0.500143,
+      "zeta": 2.6535,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Malia",
+      "sign": "U+10652",
+      "sign_cp": 67154,
+      "y_ij": 7,
+      "n_i": 76,
+      "y_j": 11,
+      "delta": 0.860049,
+      "sigma": 0.236016,
+      "zeta": 3.644,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Malia",
+      "sign": "U+10705",
+      "sign_cp": 67333,
+      "y_ij": 3,
+      "n_i": 76,
+      "y_j": 3,
+      "delta": 1.370002,
+      "sigma": 0.408429,
+      "zeta": 3.3543,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Malia",
+      "sign": "U+10730",
+      "sign_cp": 67376,
+      "y_ij": 3,
+      "n_i": 76,
+      "y_j": 3,
+      "delta": 1.370002,
+      "sigma": 0.408429,
+      "zeta": 3.3543,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Malia",
+      "sign": "U+10731",
+      "sign_cp": 67377,
+      "y_ij": 2,
+      "n_i": 76,
+      "y_j": 2,
+      "delta": 1.369782,
+      "sigma": 0.500148,
+      "zeta": 2.7388,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Phaistos",
+      "sign": "U+10611",
+      "sign_cp": 67089,
+      "y_ij": 5,
+      "n_i": 273,
+      "y_j": 9,
+      "delta": 0.707805,
+      "sigma": 0.26753,
+      "zeta": 2.6457,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Phaistos",
+      "sign": "U+10668",
+      "sign_cp": 67176,
+      "y_ij": 3,
+      "n_i": 273,
+      "y_j": 4,
+      "delta": 0.969774,
+      "sigma": 0.378154,
+      "zeta": 2.5645,
+      "perm_p": 0.00019998000199980003
+    },
+    {
+      "site": "Phaistos",
+      "sign": "U+10674",
+      "sign_cp": 67188,
+      "y_ij": 3,
+      "n_i": 273,
+      "y_j": 3,
+      "delta": 1.326458,
+      "sigma": 0.408424,
+      "zeta": 3.2477,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Phaistos",
+      "sign": "U+1067F",
+      "sign_cp": 67199,
+      "y_ij": 2,
+      "n_i": 273,
+      "y_j": 2,
+      "delta": 1.326248,
+      "sigma": 0.500143,
+      "zeta": 2.6517,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Phaistos",
+      "sign": "U+106BE",
+      "sign_cp": 67262,
+      "y_ij": 2,
+      "n_i": 273,
+      "y_j": 2,
+      "delta": 1.326248,
+      "sigma": 0.500143,
+      "zeta": 2.6517,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Phaistos",
+      "sign": "U+10748",
+      "sign_cp": 67400,
+      "y_ij": 7,
+      "n_i": 273,
+      "y_j": 10,
+      "delta": 0.902392,
+      "sigma": 0.242832,
+      "zeta": 3.7161,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Phaistos",
+      "sign": "U+1074F",
+      "sign_cp": 67407,
+      "y_ij": 4,
+      "n_i": 273,
+      "y_j": 4,
+      "delta": 1.326669,
+      "sigma": 0.353756,
+      "zeta": 3.7502,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Zakros",
+      "sign": "U+10608",
+      "sign_cp": 67080,
+      "y_ij": 16,
+      "n_i": 520,
+      "y_j": 67,
+      "delta": 0.229435,
+      "sigma": 0.1104,
+      "zeta": 2.0782,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Zakros",
+      "sign": "U+10613",
+      "sign_cp": 67091,
+      "y_ij": 7,
+      "n_i": 520,
+      "y_j": 16,
+      "delta": 0.496787,
+      "sigma": 0.208847,
+      "zeta": 2.3787,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Zakros",
+      "sign": "U+1061B",
+      "sign_cp": 67099,
+      "y_ij": 4,
+      "n_i": 520,
+      "y_j": 5,
+      "delta": 0.985167,
+      "sigma": 0.333541,
+      "zeta": 2.9537,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Zakros",
+      "sign": "U+10697",
+      "sign_cp": 67223,
+      "y_ij": 2,
+      "n_i": 520,
+      "y_j": 2,
+      "delta": 1.272467,
+      "sigma": 0.500138,
+      "zeta": 2.5442,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Zakros",
+      "sign": "U+106BD",
+      "sign_cp": 67261,
+      "y_ij": 3,
+      "n_i": 520,
+      "y_j": 3,
+      "delta": 1.272666,
+      "sigma": 0.408418,
+      "zeta": 3.1161,
+      "perm_p": 9.999000099990002e-05
+    },
+    {
+      "site": "Zakros",
+      "sign": "U+106ED",
+      "sign_cp": 67309,
+      "y_ij": 9,
+      "n_i": 520,
+      "y_j": 22,
+      "delta": 0.459141,
+      "sigma": 0.179992,
+      "zeta": 2.5509,
+      "perm_p": 9.999000099990002e-05
+    }
+  ],
+  "total_enriched": 100,
+  "total_tested": 100
+}

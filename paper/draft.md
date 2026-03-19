@@ -23,7 +23,7 @@
 
 ## Abstract
 
-We apply distributional methods to 1,721 Linear A inscriptions (Minoan Crete, c. 1800–1450 BCE) to characterize the functional architecture of the writing system without assuming a linguistic affiliation. Using Fisher's exact test dependency graphs, distributional sign classification, and Monroe et al. (2008) weighted log-odds site batteries, we recover five structural properties: (1) the sign inventory separates into grammatical modifiers (36 signs), commodity ideograms (14), positional determinatives (9), and isolated roots (3); (2) the co-occurrence network exhibits hub-spoke topology characteristic of agglutinative morphology; (3) all sites share 70–98% of their vocabulary with the dominant archive, indicating a unified script with site-specific lexicons; (4) apparent site-specific vocabulary is partially confounded by inscription medium; (5) information density scales with communicative function—tablets (ledgers, mean 10.3 signs) carry more text than clay vessels (mobile, mean 2.9), producing a non-monotonic mobility gradient. These methods generalize to any administrative corpus and constrain future decipherment.
+We apply distributional methods to 1,721 Linear A inscriptions (Minoan Crete, c. 1800–1450 BCE) to characterize the functional architecture of the writing system without assuming a linguistic affiliation. Using Fisher's exact test dependency graphs, distributional sign classification, and Monroe et al. (2008) weighted log-odds site batteries, we recover five structural properties: (1) the sign inventory separates into grammatical modifiers (36 signs), commodity ideograms (14), positional determinatives (9), and isolated roots (3), with 5 signs falling into multiple categories; (2) the co-occurrence network exhibits hub-spoke topology consistent with suffixing morphology, though we do not establish this diagnostically; (3) all sites share 70–98% of their vocabulary with the dominant archive, indicating a unified script with site-specific lexicons; (4) apparent site-specific vocabulary is partially confounded by inscription medium — a finding with methodological implications for any archaeological corpus study; (5) information density varies by archaeologically established object function rather than geographic mobility, producing a non-monotonic gradient that falsifies a naive distance hypothesis. These methods generalize to any administrative corpus and constrain future decipherment.
 
 **Keywords:** undeciphered scripts, Linear A, Minoan, distributional analysis, information density, computational epigraphy
 
@@ -66,9 +66,25 @@ The corpus follows a Zipf distribution (α = 1.612, R² = 0.92), with 53 signs a
 
 A single site—Haghia Triada (HT)—accounts for 1,106 inscriptions (64.5% of the corpus), nearly all from a single destruction deposit in the LMIB period (c. 1450 BCE). This creates a statistical dominance problem: naive frequency comparisons will always show non-HT sites as "different" simply because of sampling variance. Our methods are designed to handle this asymmetry explicitly (see Section 3.3).
 
-### 2.4 Inscription Media
+### 2.4 Filtering and Effective Corpus Sizes
 
-Linear A inscriptions appear on 19 distinct support types, including clay tablets (accounting records), clay nodules (authentication stamps pressed around strings or pegs), roundels (disc-shaped transaction receipts), stone vessels, clay vessels, metal objects, and architectural surfaces. The distribution of support types varies dramatically by site (see Results, Section 4.4). Inscriptions were extracted by identifying Unicode codepoints in the Linear A block (U+10600–U+1077F), excluding editorial markers in the unassigned zone (U+1076B–U+1076F) and Aegean number signs (U+10100–U+1013F).
+Inscriptions were extracted by identifying Unicode codepoints in the Linear A block (U+10600–U+1077F), excluding editorial markers in the unassigned zone (U+1076B–U+1076F) and Aegean number signs (U+10100–U+1013F). Not all 1,721 inscriptions contain Linear A signs after filtering; some consist entirely of numerals, editorial markers, or are recorded as empty. The effective corpus size varies by analysis:
+
+| Analysis | N | Reason for reduction |
+|----------|---|---------------------|
+| Phase 3 (dependency graph) | 1,659 | Inscriptions with ≥1 Linear A sign (co-occurrence requires signs) |
+| Phase 4 (classification) | 1,674 | Inscriptions with ≥1 Linear A sign (broader sign extraction including numeral-adjacent) |
+| Phase 5 (site battery) | 1,721 | All inscriptions (site assignment exists for all) |
+
+The difference between 1,659 and 1,674 reflects minor extraction path differences: Phase 3 extracts signs from `signs_unicode` only, while Phase 4 also checks numeral adjacency in the full inscription text. All sign counts, coverage percentages, and statistical tests use the N appropriate to their analysis.
+
+### 2.5 Multi-Face Inscriptions
+
+Some objects in the corpus have inscriptions on multiple faces (e.g., HT9a/HT9b, HT86a/HT86b), which are recorded as separate entries. These represent a single administrative act inscribed across two surfaces. We retain them as separate entries because each face may contain different sign sequences with different positional properties; merging them would obscure face-specific patterns. This convention inflates the inscription count by a small margin (estimated <3% of entries).
+
+### 2.6 Inscription Media
+
+Linear A inscriptions appear on 19 distinct support types, including clay tablets (accounting records), clay nodules (authentication stamps pressed around strings or pegs sealing containers or tied packages; Weingarten, 1986), roundels (disc-shaped one-time transaction receipts; Hallager, 1996), stone vessels, clay vessels, metal objects, and architectural surfaces. The distribution of support types varies dramatically by site (see Results, Section 4.4).
 
 ---
 
@@ -129,12 +145,14 @@ Significance is validated by a permutation null: we shuffle site labels across a
 
 We compute the number of Linear A signs per inscription for each support type and for four mobility levels:
 
-- **L1 (room-bound):** nodules, sealings
-- **L2 (building-bound):** tablets, roundels, lames
-- **L3 (intra-site):** clay vessels, architecture, graffiti
-- **L4 (inter-site):** stone vessels, metal objects, stone objects
+- **L1 (room-bound):** nodules, sealings — destroyed on opening, never travel (Weingarten, 1986)
+- **L2 (building-bound):** tablets, roundels, lames — archival records, found in storage deposits (Schoep, 2002; Hallager, 1996)
+- **L3 (intra-site):** clay vessels, architecture, graffiti — inscribed in situ or moved within a site
+- **L4 (inter-site):** stone vessels, metal objects, stone objects — prestige/votive objects found at multiple sites, including peak sanctuaries distant from palaces (Davis, 2014)
 
-Group comparisons use the Mann-Whitney U test (two-group) and Kruskal-Wallis H test (multi-group), with Spearman's ρ for the monotonicity of the mobility–density relationship.
+These assignments follow archaeological consensus on object function and findspot context. We acknowledge that the boundaries are interpretive — roundels, for instance, are small enough to carry between rooms but are archaeologically found in disposal contexts consistent with single-use records (Hallager, 1996), not transit. We test whether alternative groupings affect the non-monotonicity result in Section 4.5.
+
+Group comparisons use the Mann-Whitney U test (two-group) and Kruskal-Wallis H test (multi-group), with Spearman's ρ for the mobility–density correlation.
 
 ---
 
@@ -152,7 +170,9 @@ Of 317 distinct signs, 102 have ≥10 tokens (classifiable) and 215 have <10 tok
 | Singleton Root | 3 | Morphologically isolated |
 | Unclassified | 45 | ≥10 tokens but no category match |
 
-The 45 unclassified signs (44% of classifiable inventory) are predominantly 10–49 token "content words" that co-occur heavily with grammatical modifiers but lack the frequency or positional properties to qualify as modifiers themselves. This "fat middle" is a predictable consequence of Zipf's law: most sign types are too rare for their distributional behavior to be reliably characterized.
+Five signs fall into multiple categories: U+10642 (Core Modifier + Commodity, 307 tokens), U+10649 (Core Modifier + Commodity, 64 tokens), and three signs classified as both Slot-Restricted and Singleton Root. The categories are not mutually exclusive by design: a sign that is positionally locked AND morphologically isolated satisfies both criteria, and a high-frequency sign that always precedes numerals can be both a grammatical modifier and a commodity label. The counts in Table 1 reflect unique signs per category; the 5 multi-category signs are counted in each category they qualify for.
+
+The 45 unclassified signs (44% of classifiable inventory) are predominantly 10–49 token signs that co-occur heavily with grammatical modifiers (affix co-occurrence rates of 0.72–1.00) but lack the frequency to qualify as modifiers and the positional concentration to qualify as slot-restricted. These are the "content words" — nouns, personal names, specialized terms — that constitute the lexical core of the script. Their high affix co-occurrence rate is itself informative: it confirms that these signs participate in morphological constructions, taking the grammatical modifiers identified above as affixes. The 44% unclassified rate is a limitation of the classification scheme, not an indicator of noise; it reflects the inherent difficulty of categorizing medium-frequency signs in a small corpus with Zipf-distributed frequencies.
 
 [**Figure 4** — sign classification breakdown]
 
@@ -171,7 +191,9 @@ The most striking property of the graph is the distribution of degree types acro
 
 To illustrate concretely: the sign SA (U+1061E, 106 attestations) has 33 incoming directed edges and zero outgoing edges. Signs such as ME (lift = 9.4, N = 24), KO (lift = 7.8, N = 7), and DE (lift = 7.3, N = 15) predict the presence of SA, but SA does not predict any specific sign in return. This is the topological signature of a grammatical marker in an agglutinative language: a case suffix co-occurs with many nominal roots, but no particular root predicts the suffix. The same pattern holds for KI (U+10638, 28 incoming, 0 outgoing) and PA (U+10602, 26 incoming, 0 outgoing).
 
-The reverse pattern—high out-degree indicating independent roots—is notably absent from the top hubs, suggesting that the most connected signs in the network are exclusively grammatical, not lexical. This is inconsistent with an isolating language typology, where signs would show more balanced in/out degree ratios.
+The reverse pattern—high out-degree indicating independent roots—is notably absent from the top hubs, suggesting that the most connected signs in the network are exclusively grammatical, not lexical. This topology is *consistent with* agglutinative morphology — where grammatical markers attach to many roots but no root selects a specific marker — but we caution that the same hub-spoke pattern could arise from any corpus with a small set of high-frequency function signs and a large set of low-frequency content signs (a Zipf-distributed inventory). We have not run this analysis on comparable corpora from known agglutinative, fusional, or isolating languages, and therefore treat the morphological inference as suggestive, not diagnostic. A controlled comparison with known-language corpora of similar size and genre remains a desideratum.
+
+**Robustness check: HT vs non-HT.** Since HT dominates the corpus (64.5%), the dependency graph could reflect HT-specific patterns rather than Linear A broadly. We verified that the same hub signs (SA, KI, PA) appear as high-frequency modifiers at non-HT sites. The 89 signs shared between HT tablets and Khania tablets (the two largest tablet archives) include all top-15 hub signs. The hub-spoke topology is not an artifact of HT dominance.
 
 The 487 mutual edges identify pairs of signs that invariably co-occur without directional dependency—candidate fixed administrative formulas. These mutual pairs often involve signs from the same consonant series (e.g., RA ↔ SA, lift = 6.2, N = 38; NU ↔ KI, lift = 7.9, N = 26), suggesting formulaic sequences that combine grammatical elements in fixed order, analogous to the KU-RO ("total") formula in Linear B.
 
@@ -198,7 +220,7 @@ Consider Palaikastro (47 signs) compared to Haghia Triada (211 signs). Palaikast
 
 This artifact compounds in cross-site comparisons: Knossos (73 signs) × Palaikastro (47 signs) yields J = 0.519, more than double the HT × Palaikastro value, despite Palaikastro sharing a *higher* proportion of its vocabulary with HT (98%) than with Knossos (87%). Two small sets drawn from the same pool will always produce higher Jaccard than either produces against the full pool.
 
-We recommend asymmetric coverage (|A ∩ B| / |B|, where B is the smaller set) as the primary overlap metric for archaeological vocabulary comparison. Jaccard may be reported alongside but should not be used for ranking site similarity when vocabulary sizes differ by more than 2:1.
+The sensitivity of Jaccard to set-size asymmetry is well known in ecology (where species overlap between habitats of different sampling intensity produces the same artifact; Chao et al., 2005) and information retrieval. We recommend asymmetric coverage (|A ∩ B| / |B|, where B is the smaller set) as the primary overlap metric for archaeological vocabulary comparison. Jaccard may be reported alongside but should not be used for ranking site similarity when vocabulary sizes differ by more than 2:1.
 
 [**Figure 5** — site vocabulary coverage vs. Jaccard, illustrating the divergence]
 
@@ -248,7 +270,7 @@ The overall mobility–density correlation remains strong (Spearman ρ = 0.722, 
 
 The informational content required by each speech act—not the geographic range of the object—determines how many signs appear. A ledger requires a sentence regardless of whether it ever leaves the building. An ownership mark requires a word regardless of how far the pot travels.
 
-This finding extends Zipf's (1949) principle of least effort and Piantadosi et al.'s (2011) information-theoretic account of word length to administrative notation: scribes encode *exactly as much information as the communicative function requires*, no more.
+We note that the functional labels in this table (authentication, transaction record, etc.) are not derived from our analysis but imported from archaeological scholarship (Hallager, 1996; Schoep, 2002; Weingarten, 1986). Our contribution is demonstrating that these archaeologically established categories predict inscription length, and that the naive alternative hypothesis — that text length correlates with object mobility — fails the monotonicity test. The functional labels are independently motivated; the correlation with sign count is the new observation.
 
 [**Figure 1** — sign count by support type]
 [**Figure 2** — non-monotonic mobility gradient]
@@ -271,15 +293,15 @@ The practical recommendation is straightforward: site-enrichment analyses should
 
 ### 5.3 Information Density and Administrative Design
 
-The non-monotonic relationship between object mobility and information density is, on reflection, unsurprising: a modern inventory spreadsheet contains more text than a shipping label, even though the label travels further. What is noteworthy is that this principle is recoverable from a 3,500-year-old undeciphered corpus using purely distributional methods.
+That different object types carry different amounts of text is not, by itself, surprising — a modern inventory spreadsheet contains more text than a shipping label. What is noteworthy is that (a) the naive mobility hypothesis fails the monotonicity test, establishing that the relationship is non-trivial, and (b) this structure is recoverable from a 3,500-year-old undeciphered corpus using purely distributional methods without reading a single sign.
 
-The finding connects to information-theoretic research on communicative efficiency. Piantadosi et al. (2011) showed that word length is optimized for information content in context—frequent words are short, surprising words are long. Our result extends this principle from individual words to entire inscriptions: the "length" of an inscription is optimized for the informational demands of its communicative function. Authentication requires one sign. Accounting requires a sentence.
+We draw a limited analogy to information-theoretic research on communicative efficiency. Piantadosi et al. (2011) showed that word length is optimized for information content in context. Our observation operates at a different level of analysis — whole inscriptions rather than individual words, and administrative notation rather than natural language — but shares the underlying principle that communicative systems do not encode more information than the context requires. We do not claim a formal theoretical extension; rather, we observe that the same design pressure (efficient encoding relative to communicative need) appears to operate across scales and millennia.
 
 ### 5.4 Constraints on Decipherment
 
 The structural findings reported here impose four testable constraints on any future decipherment proposal:
 
-1. **Agglutinative morphology.** The hub-spoke dependency topology requires that the underlying language be agglutinative or highly suffixing. The 36 core modifiers should correspond to grammatical affixes, not independent words. Proposals positing an isolating language (e.g., certain Semitic models) must explain how isolating morphology produces the observed in-degree asymmetry.
+1. **Suffixing or agglutinative morphology (suggestive).** The hub-spoke dependency topology is consistent with agglutinative or highly suffixing morphology, though we have not established this diagnostically (see Section 4.2). Proposals positing an isolating language must explain how isolating morphology produces the observed in-degree asymmetry in the hub signs, or demonstrate that the pattern arises from corpus properties rather than morphological type.
 
 2. **Three-layer sign inventory.** The 14 commodity signs function as logograms and should not be assigned syllabic phonetic values. The 9 slot-restricted signs function as determinatives and are likely silent in reading. Only the 36 core modifiers and the content-word middle are candidates for phonetic syllabic values.
 
@@ -289,7 +311,7 @@ The structural findings reported here impose four testable constraints on any fu
 
 ### 5.5 Limitations
 
-Several limitations constrain the present analysis. The corpus is dominated by a single site: Haghia Triada accounts for 64.5% of all inscriptions, nearly all from one destruction deposit. The site diversity of our findings may therefore reflect the geographic reach of HT's administrative network rather than Minoan civilization broadly.
+Several limitations constrain the present analysis. The corpus is dominated by a single site: Haghia Triada accounts for 64.5% of all inscriptions, nearly all from one destruction deposit. We mitigate this through the weighted log-odds site battery (which explicitly models HT dominance), through a tablets-only controlled comparison between HT and Khania (Section 4.4), and through verification that the dependency graph hub signs appear at non-HT sites. Nevertheless, the site diversity of our findings may reflect the geographic reach of HT's administrative network rather than Minoan civilization broadly.
 
 The sign classification leaves 44% of classifiable signs uncategorized. This "fat middle" of 10–49 token signs is a consequence of the Zipf distribution: most sign types are too rare for their distributional behavior to be reliably assessed. Larger corpora—should they become available through future excavation—would reduce this proportion.
 
@@ -325,7 +347,7 @@ These results impose structural constraints on any future decipherment of Linear
 
 ## Data Availability
 
-The corpus, analysis scripts, and all result files are available at [repository URL]. All analyses are fully reproducible from the provided scripts.
+The corpus, analysis scripts, and all result files are available at https://github.com/Astreocclu/linear-a-structural-analysis. All analyses are fully reproducible from the provided scripts.
 
 ---
 
@@ -338,6 +360,8 @@ Bentz, C., & Ferrer-i-Cancho, R. (2016). Zipf's law of abbreviation as a languag
 Best, J. (1972). Some preliminary remarks on the decipherment of Linear A. *Talanta*, 4, 1–39.
 
 Braović, M., Krstinić, D., Štula, M., & Ivanda, A. (2024). A systematic review of computational approaches to deciphering Bronze Age Aegean and Cypriot scripts. *Computational Linguistics*, 50(2), 725–779.
+
+Chao, A., Chazdon, R. L., Colwell, R. K., & Shen, T.-J. (2005). A new statistical approach for assessing similarity of species composition with incidence and abundance data. *Ecology Letters*, 8(2), 148–159.
 
 Davis, B. (2014). *Minoan Stone Vessels with Linear A Inscriptions*. Leuven: Peeters.
 
@@ -370,6 +394,8 @@ Schoep, I. (2002). *The Administration of Neopalatial Crete: A Critical Assessme
 Snyder, B., Barzilay, R., & Knight, K. (2010). A statistical model for lost language decipherment. *Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics*, 1048–1057.
 
 Sproat, R. (2010). Ancient symbols, computational linguistics, and the reviewing practices of the general science journals. *Computational Linguistics*, 36(3), 585–594.
+
+Weingarten, J. (1986). Some unusual Minoan clay nodules. *Kadmos*, 25, 1–21.
 
 Younger, J. G. (n.d.). *Linear A texts and inscriptions in phonetic transcription and commentary*. University of Kansas. Available at https://www.academia.edu/117949722/
 

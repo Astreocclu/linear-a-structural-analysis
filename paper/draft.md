@@ -125,9 +125,9 @@ We classify each sign into one of four functional categories based on distributi
 
 **Singleton Root.** A sign is classified as a singleton root if it has ≥10 tokens, co-occurs with known grammatical hub signs (identified from the dependency graph) in <5% of its attestations, and has a frame diversity of ≤1.5 distinct (prefix, suffix) environments per attestation.
 
-**Commodity/Ideogram.** A sign is classified as a commodity if >70% of its attestations are immediately followed by an Aegean numeral sign, and it appears on at least 2 distinct support types.
+**Commodity/Ideogram.** A sign is classified as a commodity if >70% of its attestations are immediately followed by an Aegean numeral sign, and it appears on at least 2 distinct support types. Unlike the other three categories, commodities are not subject to the 10-token minimum: a sign that always precedes a numeral is functionally a commodity ideogram regardless of its frequency, and many commodity signs are rare because they denote specific goods at specific sites.
 
-Signs with fewer than 10 tokens are labeled "insufficient data" and excluded from coverage calculations.
+Signs with fewer than 10 tokens that do not qualify as commodities are labeled "insufficient data" and excluded from coverage calculations.
 
 ### 3.3 Weighted Log-Odds Site Battery
 
@@ -187,9 +187,9 @@ The dependency graph contains 1,048 edges connecting 95 signs in a single connec
 | Weak | 187 | Passes lift/asymmetry but not conditional thresholds |
 | Mutual (formula) | 487 | Asymmetry ratio < 2.0 in both directions |
 
-The most striking property of the graph is the distribution of degree types across hub signs (Figure 3). The top hub signs exhibit high in-degree (many signs depend on them) and zero out-degree (they depend on no specific sign). This asymmetry is uniform: of the top 15 signs by total degree, *none* have out-degree > 0.
+The most striking property of the graph is the distribution of degree types across hub signs (Figure 3). The top hub signs exhibit high in-degree (many signs depend on them) and zero out-degree (they depend on no specific sign). This asymmetry is nearly uniform: of the top 15 signs by total degree, 14 have out-degree = 0. The sole exception (U+1062D, rank 15, out-degree = 5) is a sign that participates in both directed and mutual edges, functioning as both a formula participant and an occasional predictor.
 
-To illustrate concretely: the sign SA (U+1061E, 106 attestations) has 33 incoming directed edges and zero outgoing edges. Signs such as ME (lift = 9.4, N = 24), KO (lift = 7.8, N = 7), and DE (lift = 7.3, N = 15) predict the presence of SA, but SA does not predict any specific sign in return. This is the topological signature of a grammatical marker in an agglutinative language: a case suffix co-occurs with many nominal roots, but no particular root predicts the suffix. The same pattern holds for KI (U+10638, 28 incoming, 0 outgoing) and PA (U+10602, 26 incoming, 0 outgoing).
+To illustrate concretely: the sign U+1061E (conventionally labeled SA from its Linear B cognate; we use these labels as shorthand, not as phonetic readings of Linear A) has 106 attestations, 33 incoming directed edges, and zero outgoing edges. Signs such as U+1060B (lift = 9.4, N = 24), U+1063A (lift = 7.8, N = 7), and U+10626 (lift = 7.3, N = 15) predict the presence of U+1061E, but U+1061E does not predict any specific sign in return. This is consistent with the behavior of a grammatical marker: it co-occurs with many content signs, but no particular content sign predicts the marker. The same pattern holds for U+10638 (28 incoming, 0 outgoing) and U+10602 (26 incoming, 0 outgoing). All lift values and edge counts are available in the full edge list in the supplementary data (phase3_dependency_graph.json).
 
 The reverse pattern—high out-degree indicating independent roots—is notably absent from the top hubs, suggesting that the most connected signs in the network are exclusively grammatical, not lexical. This topology is *consistent with* agglutinative morphology — where grammatical markers attach to many roots but no root selects a specific marker — but we caution that the same hub-spoke pattern could arise from any corpus with a small set of high-frequency function signs and a large set of low-frequency content signs (a Zipf-distributed inventory). We have not run this analysis on comparable corpora from known agglutinative, fusional, or isolating languages, and therefore treat the morphological inference as suggestive, not diagnostic. A controlled comparison with known-language corpora of similar size and genre remains a desideratum.
 
@@ -212,7 +212,7 @@ The vocabulary overlap analysis reveals that Linear A is a single unified system
 | Palaikastro | 47 | 46 | 98% | 1 | — |
 | Malia | 43 | 27 | 63% | 16 | — |
 
-Khania is the only site with substantial unique vocabulary (43 signs, 15% of its token usage). All other sites use almost exclusively signs attested at HT.
+Khania is the only site with substantial unique vocabulary (43 signs, 15% of its token usage). All other sites use almost exclusively signs attested at HT. Vocabulary overlap was computed by extracting the set of distinct Linear A sign codepoints per site from the canonical corpus and computing pairwise set intersections; the analysis script is included in the repository.
 
 **Methodological note: Jaccard similarity and vocabulary size asymmetry.** Jaccard similarity (J = |A ∩ B| / |A ∪ B|) produces misleading results when comparing vocabulary sets of different sizes, a common situation in archaeological corpora where one archive dominates.
 
@@ -256,7 +256,7 @@ However, the relationship between object mobility and information density is **n
 | L3: Intra-site | Clay vessels, graffiti | 89 | 3.6 | 3 |
 | L4: Inter-site | Stone/metal vessels | 142 | 8.9 | 5 |
 
-The L2 → L3 transition is a drop (Mann-Whitney p = 0.999 for L3 > L2), violating the monotonic prediction. Building-bound tablets carry substantially more text (mean 10.3 signs) than mobile clay vessels (mean 2.9 signs).
+The L2 → L3 transition is a drop: L2 carries significantly more text than L3 (Mann-Whitney U = 31,843, p < 0.001 for L2 > L3, rank-biserial r = 0.36), violating the monotonic prediction. Building-bound tablets carry substantially more text (mean 10.3 signs) than mobile clay vessels (mean 2.9 signs).
 
 The overall mobility–density correlation remains strong (Spearman ρ = 0.722, p ≈ 0) because the L1 → L2 and L3 → L4 jumps are large. But the non-monotonicity at L3 reveals that the operative variable is not physical distance but **communicative function**:
 
@@ -281,7 +281,7 @@ We note that the functional labels in this table (authentication, transaction re
 
 ### 5.1 Structural Analysis as a Prerequisite to Decipherment
 
-The five findings reported here characterize the functional architecture of Linear A without reading a single sign. The three-layer sign inventory (grammatical modifiers, commodity ideograms, determinatives), the agglutinative dependency topology, and the medium-dependent information density are properties of the *system*, not the *language*. They would hold regardless of whether the underlying language proves to be Dravidian, Semitic, Anatolian, or a language isolate.
+The five findings reported here characterize the functional architecture of Linear A without reading a single sign. The four-category sign inventory (grammatical modifiers, commodity ideograms, determinatives, isolated roots), the hub-spoke dependency topology, and the medium-dependent information density are properties of the *system*, not the *language*. They would hold regardless of whether the underlying language proves to be Dravidian, Semitic, Anatolian, or a language isolate.
 
 This system-first approach has practical value for decipherment: any proposed phonetic reading must be compatible with the structural constraints identified here. A decipherment that assigns phonetic values to commodity ideograms (which function as logograms, not syllabic signs) or that produces an isolating morphological profile (inconsistent with the hub-spoke dependency topology) can be rejected on structural grounds alone.
 
@@ -337,7 +337,7 @@ The relationship between communicative context and message length has deep roots
 
 ## 7. Conclusion
 
-We have demonstrated that the functional architecture of an undeciphered writing system can be recovered through distributional analysis alone. Applied to the Linear A corpus, our methods reveal a three-layer sign inventory (grammatical, logographic, determinative), an agglutinative dependency topology, site-specific lexicons embedded in a shared core vocabulary, and a medium-specific confound that partially explains site-level enrichment patterns.
+We have demonstrated that the functional architecture of an undeciphered writing system can be recovered through distributional analysis alone. Applied to the Linear A corpus, our methods reveal a four-category sign inventory (grammatical modifiers, commodity ideograms, positional determinatives, isolated roots), a dependency topology consistent with suffixing morphology, site-specific lexicons embedded in a shared core vocabulary, and a medium-specific confound that partially explains site-level enrichment patterns.
 
 The most generalizable finding is that information density in administrative inscriptions is determined by communicative function, not physical mobility or geographic distance. Ancient Minoan scribes wrote exactly as much as the speech act required—a principle that modern information theory would predict but that has not previously been demonstrated in a pre-modern notation system.
 
